@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20692F3F-8198-4BCB-A557-2EC8A106A61D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>iProvident</RootNamespace>
+    <AssemblyName>iProvident</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iProvident.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySqlBackup">
+      <HintPath>C:\Users\jojo2\Downloads\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsHash.cs" />
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="docViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="docViewer.Designer.cs">
+      <DependentUpon>docViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAmrt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAmrt.Designer.cs">
+      <DependentUpon>frmAmrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBiller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBiller.Designer.cs">
+      <DependentUpon>frmBiller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBreakDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBreakDown.Designer.cs">
+      <DependentUpon>frmBreakDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClearance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClearance.Designer.cs">
+      <DependentUpon>frmClearance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDedrecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDedrecs.Designer.cs">
+      <DependentUpon>frmDedrecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpDtl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpDtl.Designer.cs">
+      <DependentUpon>frmEmpDtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpLookUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpLookUp.Designer.cs">
+      <DependentUpon>frmEmpLookUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoan.Designer.cs">
+      <DependentUpon>frmLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderPmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderPmt.Designer.cs">
+      <DependentUpon>frmOrderPmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptOrderPmt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptOrderPmt.Designer.cs">
+      <DependentUpon>rptOrderPmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView.Designer.cs">
+      <DependentUpon>frmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditTable.Designer.cs">
+      <DependentUpon>frmEditTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.Designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewLoan.Designer.cs">
+      <DependentUpon>frmNewLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServer.Designer.cs">
+      <DependentUpon>frmServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsF.cs" />
+    <Compile Include="mtest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mtest.Designer.cs">
+      <DependentUpon>mtest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptAmrt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAmrt.Designer.cs">
+      <DependentUpon>rptAmrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptAmrt2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAmrt2.Designer.cs">
+      <DependentUpon>rptAmrt2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptAppForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAppForm.Designer.cs">
+      <DependentUpon>rptAppForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptClearance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptClearance.Designer.cs">
+      <DependentUpon>rptClearance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDV.Designer.cs">
+      <DependentUpon>rptDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptEndorsement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptEndorsement.Designer.cs">
+      <DependentUpon>rptEndorsement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptEvalNew.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptEvalNew.Designer.cs">
+      <DependentUpon>rptEvalNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptEvalReloan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptEvalReloan.Designer.cs">
+      <DependentUpon>rptEvalReloan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitFrm.Designer.cs">
+      <DependentUpon>WaitFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="docViewer.resx">
+      <DependentUpon>docViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAmrt.resx">
+      <DependentUpon>frmAmrt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBiller.resx">
+      <DependentUpon>frmBiller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBreakDown.resx">
+      <DependentUpon>frmBreakDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClearance.resx">
+      <DependentUpon>frmClearance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDedrecs.resx">
+      <DependentUpon>frmDedrecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpDtl.resx">
+      <DependentUpon>frmEmpDtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpLookUp.resx">
+      <DependentUpon>frmEmpLookUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoan.resx">
+      <DependentUpon>frmLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderPmt.resx">
+      <DependentUpon>frmOrderPmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptOrderPmt.resx">
+      <DependentUpon>rptOrderPmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView.resx">
+      <DependentUpon>frmView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditTable.resx">
+      <DependentUpon>frmEditTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewLoan.resx">
+      <DependentUpon>frmNewLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServer.resx">
+      <DependentUpon>frmServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mtest.resx">
+      <DependentUpon>mtest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rptAmrt.resx">
+      <DependentUpon>rptAmrt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAmrt2.resx">
+      <DependentUpon>rptAmrt2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAppForm.resx">
+      <DependentUpon>rptAppForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptClearance.resx">
+      <DependentUpon>rptClearance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDV.resx">
+      <DependentUpon>rptDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEndorsement.resx">
+      <DependentUpon>rptEndorsement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEvalNew.resx">
+      <DependentUpon>rptEvalNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEvalReloan.resx">
+      <DependentUpon>rptEvalReloan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitFrm.resx">
+      <DependentUpon>WaitFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Approve_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Balance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deped_LQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Header.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l1_LQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iProvident.ico" />
+    <None Include="Resources\iP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
