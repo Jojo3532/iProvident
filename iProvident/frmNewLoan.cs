@@ -239,7 +239,7 @@ namespace iProvident
                 if (clsF.rQry(qry))
                 {
                     if (txtLoanNo.Text == "") txtLoanNo.Text = clsF.qDtbl("SELECT FORMAT(MAX(LoanNo), '000000') AS cLN FROM tblLoan;").Rows[0][0].ToString();
-                    if(MessageBox.Show($"Succesfully {btnSave.Text}d. Do you want to proceed printing?", "Saved", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    if(MessageBox.Show($"Do you want to proceed printing?", "Successfully Saved", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
                         printApplication();
                     }                  
