@@ -53,11 +53,9 @@
             this.btnOPEdit = new DevExpress.XtraBars.BarButtonItem();
             this.btnOPDelete = new DevExpress.XtraBars.BarButtonItem();
             this.btnOPClean = new DevExpress.XtraBars.BarButtonItem();
-            this.brPrint = new DevExpress.XtraBars.BarButtonItem();
             this.pmActive = new DevExpress.XtraBars.PopupMenu(this.components);
             this.pmCancelled = new DevExpress.XtraBars.PopupMenu(this.components);
             this.pmOP = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.bar1 = new DevExpress.XtraBars.Bar();
             ((System.ComponentModel.ISupportInitialize)(this.gcTbl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvTbl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRef.Properties)).BeginInit();
@@ -175,9 +173,8 @@
             this.btnOrderPmt,
             this.btnOPEdit,
             this.btnOPDelete,
-            this.btnOPClean,
-            this.brPrint});
-            this.barManager1.MaxItemId = 22;
+            this.btnOPClean});
+            this.barManager1.MaxItemId = 21;
             // 
             // barDockControlTop
             // 
@@ -281,18 +278,10 @@
             this.btnOPClean.Name = "btnOPClean";
             this.btnOPClean.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOPClean_ItemClick);
             // 
-            // brPrint
-            // 
-            this.brPrint.Caption = "Print";
-            this.brPrint.Id = 21;
-            this.brPrint.Name = "brPrint";
-            this.brPrint.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.brPrint_ItemClick);
-            // 
             // pmActive
             // 
             this.pmActive.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnUpdate),
-            new DevExpress.XtraBars.LinkPersistInfo(this.brPrint),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnUndoApp),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnPLedger),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnVwAmrt),
@@ -317,14 +306,6 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnOPClean)});
             this.pmOP.Manager = this.barManager1;
             this.pmOP.Name = "pmOP";
-            // 
-            // bar1
-            // 
-            this.bar1.BarName = "Custom 2";
-            this.bar1.DockCol = 0;
-            this.bar1.DockRow = 0;
-            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.bar1.Text = "Custom 2";
             // 
             // frmView
             // 
@@ -382,7 +363,5 @@
         private DevExpress.XtraBars.BarButtonItem btnOPEdit;
         private DevExpress.XtraBars.BarButtonItem btnOPDelete;
         private DevExpress.XtraBars.BarButtonItem btnOPClean;
-        private DevExpress.XtraBars.BarButtonItem brPrint;
-        private DevExpress.XtraBars.Bar bar1;
     }
 }

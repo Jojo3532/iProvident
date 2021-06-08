@@ -41,7 +41,6 @@ namespace iProvident
                     Properties.Settings.Default.conn = clsHash.Encrypt(clsF.Conn.ConnectionString.ToString());
                     Properties.Settings.Default.Username = Username;
                     Properties.Settings.Default.Password = Password;
-                    clsF.UserName = Username;
 
                 //load reusable values
                 clsF.dtDefV = clsF.qDtbl("SELECT * FROM tblDefaultV;");                

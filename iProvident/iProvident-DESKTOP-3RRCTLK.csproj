@@ -168,12 +168,6 @@
     <Compile Include="frmOrderPmt.Designer.cs">
       <DependentUpon>frmOrderPmt.cs</DependentUpon>
     </Compile>
-    <Compile Include="rptLState.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="rptLState.Designer.cs">
-      <DependentUpon>rptLState.cs</DependentUpon>
-    </Compile>
     <Compile Include="rptOrderPmt.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -308,9 +302,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOrderPmt.resx">
       <DependentUpon>frmOrderPmt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="rptLState.resx">
-      <DependentUpon>rptLState.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rptOrderPmt.resx">
       <DependentUpon>rptOrderPmt.cs</DependentUpon>

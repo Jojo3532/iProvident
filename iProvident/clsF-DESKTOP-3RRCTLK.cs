@@ -21,9 +21,6 @@ namespace iProvident
         public static string dB = "iProvD";
         public static Boolean OPChanged = false;
 
-        //global variables
-        public static String UserName;
-
         public static DataTable getActiveLoan() {
             dtActiveL = new DataTable();
             dtActiveL = qDtbl("EXEC getLoans 'Open';");

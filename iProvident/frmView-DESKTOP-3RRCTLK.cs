@@ -78,12 +78,10 @@ namespace iProvident
                     break;
 
                 case "Active Loans":
-                    /*frmLoan frmL = new frmLoan();
+                    frmLoan frmL = new frmLoan();
                     
                     frmL.LN = LN;
-                    frmL.ShowDialog();*/
-
-                    brPrint_ItemClick(sender, null);
+                    frmL.ShowDialog();
                     break;
 
                 case "Employee":
@@ -361,27 +359,6 @@ namespace iProvident
                 refGV();
                 clsF.OPChanged = false;
             }
-        }
-
-        private void brPrint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            rptLState rpt = new rptLState();
-            rpt.rlEmpID.Text = gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["EmpID"]).ToString();
-            rpt.rlName.Text = gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["FirstName"]).ToString() + " " + gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["MI"]).ToString() + ". " + gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["LastName"]).ToString();
-            rpt.rlStation.Text = gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["Station"]).ToString();
-            rpt.rlLoanApp.Text = "₱ " + decimal.Parse(gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["LoanApplied"]).ToString()).ToString("#,#0.00");
-            rpt.rlAmrt.Text = "₱ " + decimal.Parse(gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["MonthlyAmrt"]).ToString()).ToString("#,#0.00");
-            rpt.rlEffDate.Text = gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["Start"]).ToString();
-            rpt.rlTermDate.Text = gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["End"]).ToString();
-            rpt.rlLoanNo.Text = "LN" + gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["LoanNo"]).ToString();
-            rpt.rlType.Text = gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["Type"]).ToString();
-            rpt.rlLPmt.Text = DateTime.Parse(gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["AsOf"]).ToString()).ToString("MMMM yyyy");
-            rpt.rlStatusPmt.Text = gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["Payment"]).ToString();
-            rpt.rlProgress.Text = gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["Progress"]).ToString() + "%";
-            rpt.rlBalance.Text = "₱ " + decimal.Parse(gvTbl.GetRowCellValue(sRow[0], gvTbl.Columns["Balance"]).ToString()).ToString("#,#0.00");
-            rpt.rlUserName.Text = "Printed by: " + clsF.UserName + " " + DateTime.Now.ToString();
-
-            clsF.showDcV(rpt, "Account Statement");
         }
 
         private void btnVwAmrt_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
